@@ -325,7 +325,7 @@ class NovaGUI(QMainWindow):
         self.edit_menu = QMenu("Editar", self)
         self.menubar.addMenu(self.edit_menu)
         self.edit_menu.addAction("Alterar Período de Análise", self.toggle_custom_date)
-        self.edit_menu.addAction("Alterar Período das Média Móveis", self.toggle_ma_period)
+        self.edit_menu.addAction("Alterar Período das Médias Móveis", self.toggle_ma_period)
         self.edit_menu.addAction("Alterar Período dos Candlesticks", self.toggle_candlestick_period)
         self.edit_menu.addSeparator()
         self.edit_menu.addAction("Desfazer", self.desfazer).setShortcut('Ctrl+Z')
@@ -525,7 +525,7 @@ class NovaGUI(QMainWindow):
             self.plot_chart()
 
     def toggle_ma_period(self):
-        period, ok = QInputDialog.getInt(self, "Período das Média Móveis", "Período das Média Móveis", self.current_settings.ma_period, 1, 1000, 1)
+        period, ok = QInputDialog.getInt(self, "Período das Médias Móveis", "Período das Médias Móveis", self.current_settings.ma_period, 1, 1000, 1)
         if ok:
             self.current_settings.ma_period = period
             self.current_settings.ema_period = period
