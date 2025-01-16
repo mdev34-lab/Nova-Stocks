@@ -1,0 +1,4 @@
+- [X] Refatorar o main.py
+- [X] Estilizar tudo
+- [X] Configurações
+- [ ] Deixar open source no GitHub

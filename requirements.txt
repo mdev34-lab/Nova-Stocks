@@ -1,0 +1,8 @@
+yfinance>=0.2.31
+mplfinance>=0.12.10b0
+matplotlib>=3.7.1
+PySide6>=6.5.2
+pandas>=2.0.3
+numpy>=1.25.2
+python-docx
+darkdetect
